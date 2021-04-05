@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Menu Example</title>
+
+    <meta name="description" content="Just a menu example" />
+
+    <meta name="keywords" content="Menu, mobile menu, burger animation, dropdown, dropdown menu">
+    <meta name="author" content="Dmytro Anikin">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <!-- Logo -->
+                <a href="/" class="header-wrapper__logo">
+                    <img src="images/dimianni_logo.svg" alt="">
+                </a>
+
+                <!-- Menu -->
+                <nav class="header-wrapper__menu">
+                    <ul class="header-wrapper__menu--list">
+                        <li class="header-wrapper__menu--list_el">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="header-wrapper__menu--list_el header-wrapper__menu--list_el-dropdown">
+                            <div class="header-wrapper__menu--list_el-visible">
+                                <span>Works</span>
+                            </div>
+                            <div class="header-wrapper__menu--list_el-hidden">
+                                <a href="#">Commercial</a>
+                                <div class="header-wrapper__menu--list_el-hidden--personal">
+                                    <a href="#">Personal</a>
+                                    <div class="header-wrapper__menu--list_el-hidden--personal_list">
+                                        <a href="#">One</a>
+                                        <a href="#">Two</a>
+                                        <a href="#">Three</a>
+                                    </div>
+                                </div>
+                                <a href="#">Fun</a>
+                            </div>
+                        </li>
+                        <li class="header-wrapper__menu--list_el">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Burger -->
+                <div class="header-wrapper__burger">
+                    <div class="header-wrapper__burger--cont">
+                        <div class="header-wrapper__burger--cont_el"></div>
+                        <div class="header-wrapper__burger--cont_el"></div>
+                        <div class="header-wrapper__burger--cont_el"></div>
+                        <div class="header-wrapper__burger--cont_el"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-wrapper">
+                Section
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
