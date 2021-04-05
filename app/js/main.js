@@ -22,4 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
+
+    // Initial scroll position
+    var scrollPos = 0,
+        header = document.querySelector(".header");
+
+    window.addEventListener('scroll', function () {
+
+        console.log(document.body.getBoundingClientRect().top);
+
+        if (document.body.getBoundingClientRect().top > scrollPos) {
+            // console.log("UP");
+            header.classList.remove("hide")
+        } else {
+            // console.log("DOWN");
+            header.classList.add("hide")
+
+        }
+
+        // updating scroll position
+        scrollPos = document.body.getBoundingClientRect().top;
+    });
+
 })

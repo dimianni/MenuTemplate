@@ -49,6 +49,11 @@ li {
     margin: 0 auto;
 }
 
+.header.hide{
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+}
+
 .header-wrapper__burger--cont.burgerActive {
     .header-wrapper__burger--cont_el:nth-child(1) {
         width: 0;

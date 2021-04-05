@@ -92,7 +92,6 @@ function watching() {
 }
 
 
-
 /*----------------------------------------------------*/
 /*	Function that takes necessary files and puts them into dist folder
 ------------------------------------------------------*/
